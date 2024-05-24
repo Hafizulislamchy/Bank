@@ -11,14 +11,56 @@
    
     <div id="login-area">
         <h1 class="text-center">Welcome to Brac Bank</h1>
-        <div id="submit-area">
+        <div class="submit-area">
             <h4>Login</h4>
             <input type="text" class="form-control" name="" id="" placeholder="Email">
             <br>
             <input type="password" class="form-control" name="" id="" placeholder="Password">
             <br>
-            <button class="btn btn-success">Enter</button>
+            <button id="login" class="btn btn-success">Enter</button>
         </div>
     </div>
+      <div id="Transaction-area">
+    <div class="row">
+        <div class="col-md-4">
+           <div class="deposit status">
+            <h5>Deposit</h5>
+            <h2>$<span id="currentDeposit">00</span></h2>
+           </div>
+        </div>
+        <div class="col-md-4">
+             <div class="withdraw status">
+                <h5>withdraw</h5>
+                <h2>$<span id="currentwithdraw"></span>00</h2>
+             </div>
+        </div>
+        <div class="col-md-4">
+            <div class="balance status">
+                <h5>Balance</h5>
+            <h2>$ <span id="currentBalance">1200</span></h2>
+            </div>
+        </div>
+    </div>
+        <!-- .row>col-md-6*2>h4+input+btn.btn.btn-success -->
+        <div class="row">
+            <div class="col-md-6">
+                  <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input  id="depositAmount" type="text" class="form-control" placeholder="$ amout you want to deposit">
+                    <br>
+                    <button id="adddeposit" class="btn btn-success">Deposit</button>
+                  </div>
+                </div>
+            <div class="col-md-6">
+                 <div class="submit-area">
+                    <h4>withdraw</h4>
+                <input id="withdrawAmount" type="text" class="form-control" placeholder="$ amout you want to withdraw">
+                <br>
+                <button id="addwithdraw" class="btn btn-success">withdraw</button>
+                 </div>
+            </div>
+        </div>
+      </div>
+    <script src="app.js"></script>
 </body>
 </html>
